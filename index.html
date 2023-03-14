@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Calculator.js" defer></script>
+</head>
+<body>
+    <div class="calculator-screen">
+        <form name="form">
+        <div class="output-screen"><input class="output-value" type="text" placeholder="0" name="displayResult" id="output-value"/></div>
+        <div class="button-screen">
+
+           
+            <input type="button" class="btn" name="AC" value="AC" onClick="document.getElementById(
+                'output-value').value = ''" id="btn5"/>
+            <input type="button" class="btn" name="openbrac" value="(" onClick="calculate(openbrac.value)"id="btn6"/>
+            <input type="button" class="btn" name="closebrac" value=")" onClick="calculate(closebrac.value)"id="btn7"/>
+            <input type="button" class="btn" name="divide" value="%" onClick="calculate(divide.value)"id="btn8"/>
+            <input type="button" class="btn" name="b7" value="7" onClick="calculate(b7.value)" id="btn9"/>
+            <input type="button" class="btn" name="b8" value="8" onClick="calculate(b8.value)" id="btn10"/>
+            <input type="button" class="btn" name="b9" value="9" onClick="calculate(b9.value)"id="btn11" />
+            <input type="button"class="btn" name="multiply" value="*" onClick="calculate(multiply.value)"id="btn12" />
+            <input type="button" class="btn"name="b4" value="4" onClick="calculate(b4.value)" id="btn13"/>
+            <input type="button" class="btn" name="b5" value="5" onClick="calculate(b5.value)" id="btn14" />
+            <input type="button" class="btn"name="b6" value="6" onClick="calculate(b6.value)" id="btn15" />
+            <input type="button" class="btn" name="sub" value="-" onClick="calculate(sub.value)" id="btn16"/>
+            <input type="button" class="btn" name="b1" value="1" onClick="calculate(b1.value)" id="btn17"/>
+            <input type="button" class="btn" name="b2" value="2" onClick="calculate(b2.value)" id="btn18"/>
+            <input type="button" class="btn" name="b3" value="3" onClick="calculate(b3.value)" id="btn19"/>
+            <input type="button" class="btn" name="add" value="+" onClick="calculate(add.value)" id="btn20"/>
+            <input type="button"class="btn"name="fullstop" value="." onClick="calculate(fullstop.value)" id="btn21" />
+            <input type="button" class="btn" name="b0" value="0" onClick="calculate(b0.value)"  id="btn22"/>
+            <input type="button" class="btn" name="mod" value="/" onClick="calculate(mod.value)" id="btn23" />
+            <input type="button" class="btn" name="result" value="=" onClick="displayResult.value=eval(displayResult.value)" id="final-output-btn"/>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
